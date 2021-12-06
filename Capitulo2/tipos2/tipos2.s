@@ -6,7 +6,7 @@
 //@Fecha    6 Dic 2021
 
 .text
-	.global main
+.global main
 main:
 	push    {r4, lr}
 	ldr     r0, .L3
