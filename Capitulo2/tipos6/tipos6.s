@@ -1,3 +1,12 @@
+#include <stdio.h>
+
+/* Problema tipos6.s
+	Escribir el programa de la suma de un vector de enteros largos
+*/
+
+//@Autor    KoiF1sh    
+//@Fecha    6 Dic 2021
+
 .data
 var1 : .asciz " La suma es %lld \ n"
 var2 : .word 1600000000, - 100, 800000000, - 50, 200
