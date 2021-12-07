@@ -1,9 +1,9 @@
 #    Captura de ejecucion de los Programas
 
 ## tipo1
-![](Final/Imagenes/Capitulo2/Captura1.PNG)
+![](Imagenes/Capitulo2/Captura1.PNG)
 ## tipo2
-![](Final/Imagenes/Capitulo2/Captura2.PNG)
+![](Imagenes/Capitulo2/Captura2.PNG)
 
 # tipo3a
 
