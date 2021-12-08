@@ -6,7 +6,7 @@
 //@Fecha    9 Dic 2021
 
 .text
-.global	myrand, mysrand
+.global	myrand, mysrand, main
 .arch	armv6
 
 myrand:
@@ -29,18 +29,10 @@ mysrand:
 	ldr	r3, .L5
 	str	r0, [r3]
 	bx	lr
-.L6:
-	.align  2
+
 .L5:
 	.word   .LANCHOR0
-	.size   mysrand, .-mysrand
-	.section        .text.startup,"ax",%progbits
-	.align  2
-	.global main
-	.syntax unified
-	.arm
-	.fpu vfp
-	.type   main, %function
+	
 main:
 	push	{r4, r5, r6, lr}
 	mov	r4, #5
