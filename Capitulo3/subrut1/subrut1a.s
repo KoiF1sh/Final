@@ -6,13 +6,8 @@
 //@Fecha    9 Dic 2021
 
 .text
-.align	2
-.global	myrand
+.global	myrand, mysrand
 .arch	armv6
-.syntax	unified
-.arm
-.fpu	vfp
-.type	myrand, %function
 
 myrand:
 	ldr	r2, .L2
@@ -25,19 +20,10 @@ myrand:
 	str	r3, [r2]
 	and	r0, r0, r3, asr #16
 	bx	lr
-.L3:
-	.align  2
 .L2:
 	.word	.LANCHOR0
 	.word	1103515245
 	.word	32767
-	.size	myrand, .-myrand
-	.align	2
-	.global	mysrand
-	.syntax	unified
-	.arm
-	.fpu	vfp
-	.type	mysrand, %function
 	
 mysrand:
 	ldr	r3, .L5
