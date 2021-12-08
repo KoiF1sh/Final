@@ -40,51 +40,51 @@ myrand:
 	.type	mysrand, %function
 	
 mysrand:
-        ldr     r3, .L5
-        str     r0, [r3]
-        bx      lr
+	ldr	r3, .L5
+	str	r0, [r3]
+	bx	lr
 .L6:
-        .align  2
+	.align  2
 .L5:
-        .word   .LANCHOR0
-        .size   mysrand, .-mysrand
-        .section        .text.startup,"ax",%progbits
-        .align  2
-        .global main
-        .syntax unified
-        .arm
-        .fpu vfp
-        .type   main, %function
+	.word   .LANCHOR0
+	.size   mysrand, .-mysrand
+	.section        .text.startup,"ax",%progbits
+	.align  2
+	.global main
+	.syntax unified
+	.arm
+	.fpu vfp
+	.type   main, %function
 main:
-        push    {r4, r5, r6, lr}
-        mov     r4, #5
-        ldr     r3, .L12
-        ldr     r5, .L12+4
-        mov     r2, #42
-        str     r2, [r3]
+	push	{r4, r5, r6, lr}
+	mov	r4, #5
+	ldr	r3, .L12
+	ldr	r5, .L12+4
+	mov	r2, #42
+	str	r2, [r3]
 .L8:
-        bl      myrand
-        mov     r1, r0
-        mov     r0, r5
-        bl      printf
-        subs    r4, r4, #1
-        bne     .L8
-        pop     {r4, r5, r6, pc}
+	bl	myrand
+	mov	r1, r0
+	mov	r0, r5
+	bl	printf
+	subs	r4, r4, #1
+	bne	.L8
+	pop	{r4, r5, r6, pc}
 .L13:
-        .align  2
+	.align	2
 .L12:
-        .word   .LANCHOR0
-        .word   .LC0
-        .size   main, .-main
-        .bss
-        .align  2
-        .set    .LANCHOR0,. + 0
-        .type   seed, %object
-        .size   seed, 4
+	.word	.LANCHOR0
+	.word	.LC0
+	.size	main, .-main
+	.bss
+	.align	2
+	.set	.LANCHOR0,. + 0
+	.type	seed, %object
+	.size	seed, 4
 seed:
-        .space  4
-        .section        .rodata.str1.1,"aMS",%progbits,1
+	.space	4
+	.section	.rodata.str1.1,"aMS",%progbits,1
 .LC0:
-        .ascii  " %d\012 \000"
-        .ident  "GCC: (Raspbian 8.3.0-6+rpi1) 8.3.0"
-        .section        .note.GNU-stack,"",%progbits
+	.ascii	" %d\012 \000"
+	.ident	"GCC: (Raspbian 8.3.0-6+rpi1) 8.3.0"
+	.section	.note.GNU-stack,"",%progbits
