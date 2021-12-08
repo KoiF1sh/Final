@@ -21,7 +21,7 @@ myrand:
 	add r0, r0, r3 		@ r0= r3+ 12345
 	str r0, [ r1 ] 		@ guardo en variable seed
 
-/* Estas dos líneas devuelven "seed > >16 & 0x7fff ".
+/* Estas dos líneas devuelven "seed >>16 & 0x7fff".
 Con un pequeño truco evitamos el uso del AND */
 	LSL r0, # 1
 	LSR r0, # 17
