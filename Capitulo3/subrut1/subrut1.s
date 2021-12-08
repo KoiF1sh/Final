@@ -30,4 +30,4 @@ Con un pequeño truco evitamos el uso del AND */
 mysrand:
 	ldr r1, = seed
 	str r0, [ r1 ]
-	bx l
+	bx lr
