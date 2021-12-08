@@ -86,5 +86,3 @@ seed:
 	.section	.rodata.str1.1,"aMS",%progbits,1
 .LC0:
 	.ascii	" %d\012 \000"
-	.ident	"GCC: (Raspbian 8.3.0-6+rpi1) 8.3.0"
-	.section	.note.GNU-stack,"",%progbits
