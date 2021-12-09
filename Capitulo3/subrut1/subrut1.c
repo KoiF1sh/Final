@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 
 /* Problema subrut1.c
 	Escribir el programa del Código del programa subrut1 en c
