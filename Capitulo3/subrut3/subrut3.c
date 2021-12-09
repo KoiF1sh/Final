@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Problema subrut3.c
+/* Problema 3.6: subrut3.c
 	Escribir el programa del Código del programa subrut3 en c
 */
 // Instituto tecnológico de Tijuana
