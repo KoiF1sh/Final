@@ -1,7 +1,7 @@
 /* Problema 3.4: subrut1.s
 	Escribir la traduccion del programa del Código del programa subrut1 en s
 */
-// Instito tecnológico de Tijuana
+// Instituto tecnológico de Tijuana
 // Lenguaje de interfaz
 //@Autor    KoiF1sh    
 //@Fecha    9 Dic 2021
