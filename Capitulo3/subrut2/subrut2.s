@@ -19,7 +19,7 @@ const2:	.word	12345
 /* Salvamos registros */
 main:	push	{r4, r5}
 
-/* Llamamos a mysrand con par á metro 42 */
+/* Llamamos a mysrand con parámetro 42 */
 	mov	r0, # 42
 	bl	mysrand
 	
