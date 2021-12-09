@@ -1,9 +1,9 @@
 fibo: push { lr } @ salvaguarda lr
   sub sp, # 12 @ hago espacio para v. locales
-cmp r0, # 2 @ if n<2
-movlo r0, # 1 @ return 1
-blo fib1
-sub r0, # 1 @ else
+  cmp r0, # 2 @ if n<2
+  movlo r0, # 1 @ return 1
+  blo fib1
+  sub r0, # 1 @ else
 str r0, [ sp ] @ salvo n-1 en [sp]
 bl fibo @ fibonacci (n-1)
 str r0, [ sp, #4 ] @ salvo valor devuelto por fib. (n-1)
