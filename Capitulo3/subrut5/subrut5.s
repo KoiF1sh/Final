@@ -24,7 +24,7 @@ main: push  {r4, lr}
     add sp, # 4
 
 /* Paso resultado de la función a r1, cadena a
-imprimir a r0 y llamo a la funci ón */
+imprimir a r0 y llamo a la función */
     mov r1, r0
     ldr r0, = var1
     bl printf
@@ -58,15 +58,15 @@ imprimir a r0 y llamo a la funci ón */
     bl printf
 
 /* Recupero registros y salgo de main */
-pop { r4, lr }
-bx lr
-.equ param5, 4 *1 /* r4 */
+    pop { r4, lr }
+    bx lr
+    .equ param5, 4 *1 /* r4 */
 poly3: push { r4 } @ salvaguarda r4
-ldr r4, [ sp, # param5 ] @ leo r4 de pila
-smlabb r3, r2, r4, r3 @ r3= c*x + d
-smulbb r2, r4, r4 @ r2= x*x
-smlabb r3, r1, r2, r3 @ r3= b*(x*x) + (c*x + d)
-smulbb r2, r2, r4 @ r2= x*(x*x)
-smlabb r0, r0, r2, r3 @ r0= a*x*x*x + b*x*x + c*x+d
-pop { r4 } @ recupero r4
-bx lr @ salgo de la funci ón
+    ldr r4, [ sp, # param5 ] @ leo r4 de pila
+    smlabb r3, r2, r4, r3 @ r3= c*x + d
+    smulbb r2, r4, r4 @ r2= x*x
+    smlabb r3, r1, r2, r3 @ r3= b*(x*x) + (c*x + d)
+    smulbb r2, r2, r4 @ r2= x*(x*x)
+    smlabb r0, r0, r2, r3 @ r0= a*x*x*x + b*x*x + c*x+d
+    pop { r4 } @ recupero r4
+    bx lr @ salgo de la funci ón
