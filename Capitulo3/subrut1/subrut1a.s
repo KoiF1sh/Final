@@ -48,14 +48,11 @@ main:
 	subs	r4, r4, #1
 	bne	.L8
 	pop	{r4, r5, r6, pc}
-.L13:
-	.align	2
 .L12:
 	.word	.LANCHOR0
 	.word	.LC0
 	.size	main, .-main
 	.bss
-	.align	2
 	.set	.LANCHOR0,. + 0
 	.type	seed, %object
 	.size	seed, 4
