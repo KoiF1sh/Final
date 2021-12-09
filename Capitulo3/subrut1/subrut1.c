@@ -3,7 +3,7 @@
 /* Problema 3.3: subrut1.c
 	Escribir el programa del Código del programa subrut1 en c
 */
-// Instito tecnológico de Tijuana
+// Instituto tecnológico de Tijuana
 // Lenguaje de interfaz
 //@Autor    KoiF1sh    
 //@Fecha    9 Dic 2021
