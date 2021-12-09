@@ -1,8 +1,8 @@
-subrut1: subrut1.o
-	g++ subrut1.o -o subrut1
+subrut2: subrut2.o
+	g++ subrut2.o -o subrut2
 
-subrut1.o: subrut1.s
-	as -g -o subrut1.o subrut1.s
+subrut2.o: subrut2.s
+	as -g -o subrut2.o subrut2.s
 
 clean:
-	rm subrut1 subrut1.o
+	rm subrut2 subrut2.o
