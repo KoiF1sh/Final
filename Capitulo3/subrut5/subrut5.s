@@ -1,3 +1,11 @@
+/* Problema 3.12: subrut5.s
+	Escribir el código del programa subrut5 en s
+*/
+// Instituto tecnológico de Tijuana
+// Lenguaje de interfaz
+//@Autor    KoiF1sh    
+//@Fecha    9 Dic 2021
+
 .data
 var1: .asciz "%d\n"
 
