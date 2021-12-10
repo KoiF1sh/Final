@@ -1,5 +1,5 @@
 .macro abs
-  tst r0, r0
+	tst r0, r0
 negmi r0, r0
 .endm
 .data
