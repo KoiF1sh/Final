@@ -1,3 +1,11 @@
+/* Problema 3.12: subrut5.s
+	Escribir el código del programa subrut5 en s
+*/
+// Instituto tecnológico de Tijuana
+// Lenguaje de interfaz
+//@Autor    KoiF1sh    
+//@Fecha    9 Dic 2021
+
 .macro abs
 	tst r0, r0
 	negmi r0, r0
