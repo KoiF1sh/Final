@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/* Problema 3.15: subrut8.c
-	Escribir el código del programa subrut8 en c
+/* Problema 3.15: subrut9.c
+	Escribir el código del programa subrut9 en c
 */
 // Instituto tecnológico de Tijuana
 // Lenguaje de interfaz
