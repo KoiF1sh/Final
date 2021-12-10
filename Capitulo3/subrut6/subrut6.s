@@ -69,3 +69,12 @@ imprimir a r0 y llamo a la función */
 	pop	{r4, lr}
 	bx lr
 	.equ param5, 4 *1 /* r4 */
+poly3:	sub sp, #4
+	ldr r12, [sp, #param5]
+	smlabb r3, r2, r12, r3
+	smulbb r2, r12, r12
+	smlabb r3, r1, r2, r3
+	smulbb r2, r2, r12
+	smlabb r0, r0, r2, r3
+	add sp, #4
+	bx lr
