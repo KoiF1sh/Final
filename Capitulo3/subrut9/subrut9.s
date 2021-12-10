@@ -3,11 +3,11 @@
 .arch armv6
 
 ordena:
-  sub     r2, r1, #1
-  sub     r3, r1, r2
-  cmp r1, r3
-  bxle  lr
-  push  {r4, lr}
+	sub     r2, r1, #1
+	sub     r3, r1, r2
+	cmp r1, r3
+	bxle  lr
+	push  {r4, lr}
 .L5:
         mov     r3, r0
         mov     ip, #0
