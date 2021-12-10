@@ -40,7 +40,7 @@ imprimir a r0 y llamo a la función */
     add sp, # 4
 
 /* Imprimo resultado de segunda llamada */
-    mov r1, r0
+	mov r1, r0
     ldr r0, = var1
     bl printf
 
