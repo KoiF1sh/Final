@@ -7,17 +7,17 @@ var1 : .asciz "%d\n"
 /* Salvo registros */
 main: push  {r4, lr}
 
-/* Introduzco los 4 primeros par á metros vía registros */
+/* Introduzco los 4 primeros parámetros vía registros */
 	mov r0, #1
 	mov r1, #2
 	mov r2, #3
 	mov r3, #4
 
-/* Introduzco el 5o par á metro por pila */
+/* Introduzco el 5o parámetro por pila */
 	mov r4, #5
 	push { r4 }
 
-/* Llamada a funci ón poly3 (1, 2, 3, 4, 5) */
+/* Llamada a función poly3 (1, 2, 3, 4, 5) */
 	bl poly3
 
 /* Equilibro la pila ( debido al 5o par á metro ) */
