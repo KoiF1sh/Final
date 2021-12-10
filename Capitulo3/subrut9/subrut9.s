@@ -1,7 +1,22 @@
-.text
-.global ordena, main, vect
-.arch armv6
+/* Problema 3.15: subrut9.s
+	Escribir el código del programa subrut9 en s
+*/
+// Instituto tecnológico de Tijuana
+// Lenguaje de interfaz
+//@Autor    KoiF1sh    
+//@Fecha    9 Dic 2021
 
+
+.text
+.align  2
+.global ordena
+.arch armv6
+.syntax unified
+.arm
+.fpu vfp
+.type   ordena, %function
+	
+	
 ordena:
 	sub	r2, r1, #1
 	sub	r3, r1, r2
@@ -24,6 +39,14 @@ ordena:
 	cmp	r1, r3
 	bgt	.L5
 	pop	{r4, pc}
+	.size   ordena, .-ordena
+	.section        .text.startup,"ax",%progbits
+	.align  2
+	.global main
+	.syntax unified
+	.arm
+	.fpu vfp
+	.type   main, %function
 
 main:
 	push	{r4, r5, r6, lr}
@@ -45,6 +68,12 @@ main:
 .L17:
 	.word	.LANCHOR0
 	.word	.LC0
+	.size   main, .-main
+	.global vect
+	.data
+	.align  2
+	.type   vect, %object
+	.size   vect, 32
 vect:
 	.word	8
 	.word	10
@@ -54,5 +83,6 @@ vect:
 	.word	50
 	.word	2
 	.word	3
+	.section        .rodata.str1.1,"aMS",%progbits,1
 .LC0:
 	.ascii  "%d\012\000"
