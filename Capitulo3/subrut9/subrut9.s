@@ -6,17 +6,14 @@
 //@Autor    KoiF1sh    
 //@Fecha    9 Dic 2021
 
-
-.text
-.align  2
-.global ordena
-.arch armv6
-.syntax unified
-.arm
-.fpu vfp
-.type   ordena, %function
-	
-	
+	.arch armv6
+	.text
+	.global ordena
+	.syntax unified
+	.arm
+	.fpu vfp
+	.type   ordena, %function
+		
 ordena:
 	sub	r2, r1, #1
 	sub	r3, r1, r2
@@ -41,7 +38,6 @@ ordena:
 	pop	{r4, pc}
 	.size   ordena, .-ordena
 	.section        .text.startup,"ax",%progbits
-	.align  2
 	.global main
 	.syntax unified
 	.arm
@@ -71,7 +67,7 @@ main:
 	.size   main, .-main
 	.global vect
 	.data
-	.align  2
+	.set    .LANCHOR0,. + 0
 	.type   vect, %object
 	.size   vect, 32
 vect:
