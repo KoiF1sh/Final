@@ -1,5 +1,5 @@
-/* Problema 3.12: subrut5.s
-	Escribir el código del programa subrut5 en s
+/* Problema 3.14: subrut8.s
+	Escribir el código del programa subrut8 en s
 */
 // Instituto tecnológico de Tijuana
 // Lenguaje de interfaz
