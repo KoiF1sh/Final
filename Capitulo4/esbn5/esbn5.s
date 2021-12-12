@@ -29,8 +29,8 @@ bucle: bl espera 					@ Salta a rutina de espera
 /* rutina que espera medio segundo */
 espera: ldr r3, [r2, #STCLO] 				@ Lee contador en r3
 	ldr r4, = 500000
-	add r4, r3 @ r4= r3+ medio mill ón
-	ret1 : ldr r3, [ r2, # STCLO ]
-	cmp r3, r4 @ Leemos CLO hasta alcanzar
-	bne ret1 @ el valor de r4
+	add r4, r3 					@ r4= r3+ medio millón
+ret1: ldr r3, [r2, #STCLO]
+	cmp r3, r4 					@ Leemos CLO hasta alcanzar
+	bne ret1 					@ el valor de r4
 	bx lr
