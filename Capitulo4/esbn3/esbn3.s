@@ -7,10 +7,10 @@
 //@Autor	KoiF1sh    
 //@Fecha	12 Dic 2021
 
-  .set GPBASE, 0x20200000
-.set GPFSEL0, 0x00
-.set GPSET0, 0x1c
-.set GPCLR0, 0x28
+	.set GPBASE, 0x20200000
+	.set GPFSEL0, 0x00
+	.set GPSET0, 0x1c
+	.set GPCLR0, 0x28
 .text
 ldr r0, = GPBASE
 /* guia bits xx999888777666555444333222111000 */
