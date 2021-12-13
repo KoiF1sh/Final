@@ -1,5 +1,5 @@
-/* Problema 5.3: inter2.s
-	Escribir el programa inter2.s que trata sobre Interrupciones
+/* Problema 5.4: inter3.s
+	Escribir el programa inter3.s que trata sobre el control de LEDs rojos con pulsadores
 */
 //Instituto tecnológico de Tijuana
 //Lenguaje de interfaz
