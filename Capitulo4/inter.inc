@@ -1,4 +1,4 @@
-/* Problema 5.3: inter.inc
+/* Problema 5.2: inter.inc
 	Escribir el programa inter.inc donde se guardan las constantes asociadas a los puertos y también la macro ADDEXC
 */
 //Instituto tecnológico de Tijuana
