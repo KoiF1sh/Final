@@ -1,5 +1,5 @@
 /* Problema 4.3: esbn3.s
-	Escribir el programa esbn3.s que trata sobre un LED parpadeante con bucle de retardo
+	Escribir el programa esbn3.s que trata sobre un LED parpadeante
 */
 //Instituto tecnológico de Tijuana
 //Lenguaje de interfaz
