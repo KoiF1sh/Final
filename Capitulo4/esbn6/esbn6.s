@@ -1,11 +1,19 @@
 /* Problema 4.6: esbn6.s
-	Escribir el programa esbn6.s que trata sobre 
+	Escribir el programa esbn6.s que trata sobre un LED parpadeante con temporizador y sonido
 */
 //Instituto tecnológico de Tijuana
 //Lenguaje de interfaz
 //@Nombre	Ismael Chavez Perez
 //@Autor	KoiF1sh    
 //@Fecha	12 Dic 2021
+
+	.set GPBASE, 0x20200000
+	.set GPFSEL0, 0x00
+	.set GPSET0, 0x1c
+	.set GPCLR0, 0x28
+	.set STBASE, 0x20003000
+	.set STCLO, 0x04
+.text
 
 	ldr r0, = GPBASE
 /* guia bits xx999888777666555444333222111000 */
