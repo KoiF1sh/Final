@@ -7,7 +7,7 @@
 //@Autor	KoiF1sh    
 //@Fecha	12 Dic 2021
 
-  ldr r0, = GPBASE
+	ldr r0, = GPBASE
 /* guia bits xx999888777666555444333222111000 */
 mov r1, # 0b00000000000000000001000000000000
 str r1, [ r0, # GPFSEL0 ] @ Configura GPIO 4
