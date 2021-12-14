@@ -11,7 +11,7 @@ greet.o: greet.s
 	as -g -o greet.o greet.s
 
 stack: stack.o
-	ld -o stack stack.o
+	gcc -o stack stack.o
 
 stack.o: stack.s
 	as -g -o stack.o stack.s
