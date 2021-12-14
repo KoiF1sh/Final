@@ -1,11 +1,13 @@
 /* Problema teclado.s
 	Programa corto que obtiene la entrada del teclado y luego lo imprime de nuevo en la pantalla.
 */
-//Instituto tecnológico de Tijuana
-//Lenguaje de interfaz
-//@Nombre	Ismael Chavez Perez
-//@Autor	KoiF1sh    
-//@Fecha	13 Dic 2021
+//@ Instituto tecnológico de Tijuana
+//@ Depto de Sistemas y Computación
+//@ Ingenieria en Sistemas Computacionales
+//@ Lenguajes de interfaz
+//@ Nombre	Ismael Chavez Perez
+//@ Autor	KoiF1sh    
+//@ Fecha	13 Dic 2021
 
 .section	.bss
 .comm buffer, 48						@ reserve 48 byte buffer
