@@ -1,5 +1,5 @@
 /* Problema delayExample.s
-	Programa que usa las funciones sleep () / usleep ()
+	Programa que usa las funciones sleep () / usleep () para generar pausas
 */
 //@ Instituto tecnológico de Tijuana
 //@ Depto de Sistemas y Computación
