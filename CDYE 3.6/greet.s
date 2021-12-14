@@ -1,5 +1,5 @@
 /* Problema greet.s
-	Programa corto que obtiene la entrada del teclado y luego lo imprime de nuevo en la pantalla.
+	programa corto que obtiene la entrada del teclado y luego lo imprime de nuevo en la pantalla.
 */
 //Instituto tecnológico de Tijuana
 //Lenguaje de interfaz
