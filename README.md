@@ -4,8 +4,9 @@
 #        Subdirección Académica
 # Departamento de Sistemas y Computación
 ##  Ingeniería en Sistemas Computacionales
-##        DESARROLLO DE APLICACIONES MOVILES
-##   Profesora: Daniela Adriana Sánchez Vizcarra
+##        LENGUAJES DE INTERFAZ
+##   Profesor: MC. René Solis Reyes
+##     Semestre sep - ene 2021
 
 ----
 
